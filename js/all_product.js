@@ -1,0 +1,77 @@
+const allProduct = [
+    {
+        prodID: '01',
+        featureTxt: 'Value for Money',
+        prodImg: 'images/prod_img1.png',
+        prodTitle: 'HawkSight Typhoon Drone',
+        prodStar: 'images/star_icon.svg',
+        prodDescription: "Command the skies with the HawkSight Typhoon Drone, a next-generation aerial system engineered for performance, precision, and power. Built for both enthusiasts and professionals, the Typhoon blends cutting-edge technology with rugged reliability to deliver breathtaking aerial experiences and mission-critical functionality.",
+        price: {
+            currentPrice: 23.00,
+            originalPrice: 27.00,
+            discountPrice: 4.00,
+        },
+    },
+    {
+        prodID: '02',
+        featureTxt: 'Bestseller',
+        prodImg: 'images/prod_img2.png',
+        prodTitle: 'HawkSight High-Precision Drone',
+        prodStar: 'images/star_icon.svg',
+        prodDescription: "Experience unmatched aerial precision with our latest drone, designed for professionals and enthusiasts alike. Equipped with 4K Ultra HD camera, intelligent flight modes, and obstacle avoidance sensors, this drone delivers flawless performance in every flight. Whether you're mapping terrain or capturing cinematic footage, this is your ultimate flight companion.",
+        price: {
+            currentPrice: 20.00,
+            originalPrice: 29.00,
+            discountPrice: 9.00,
+        },
+    },
+    {
+        prodID: '03',
+        prodImg: 'images/prod_img3.png',
+        prodTitle: 'HawkSight T30 Drone',
+        prodStar: 'images/star_icon.svg',
+        prodDescription: "The HawkSight T30 Drone is a high-performance aerial platform built for demanding missions and professional-grade results. Engineered with advanced flight systems, intelligent automation, and robust design, the T30 is your ultimate tool for precision aerial operations in agriculture, surveying, security, and industrial inspection.",
+        price: {
+            currentPrice: 28.00,
+            originalPrice: 33.00,
+            discountPrice: 5.00,
+        },
+    },
+    {
+        prodID: '04',
+        prodImg: 'images/prod_img4.png',
+        prodTitle: 'HawkSight XAG P100 Drone',
+        prodStar: 'images/star_icon.svg',
+        prodDescription: "Meet the HawkSight XAG P100 Drone, a next-generation agricultural drone engineered for large-scale, high-efficiency farming operations. Designed with cutting-edge automation, intelligent spraying systems, and unmatched versatility, the P100 sets a new benchmark in precision agriculture.",
+        price: {
+            currentPrice: 22.00,
+            originalPrice: 25.00,
+            discountPrice: 3.00,
+        },
+    },
+    {
+        prodID: '05',
+        prodImg: 'images/prod_img5.png',
+        prodTitle: 'HawkSight Visuo SG106 Drone',
+        prodStar: 'images/star_icon.svg',
+        prodDescription: "The HawkSight Visuo SG106 Drone is the perfect entry-level quadcopter for beginners, hobbyists, and casual aerial photographers looking for big features in a compact form. Lightweight yet powerful, the SG106 delivers smooth flights, smart controls, and HD visuals—making it your ideal companion for everyday adventures.",
+        price: {
+            currentPrice: 18.00,
+            originalPrice: 23.00,
+            discountPrice: 5.00,
+        },
+    },
+    {
+        prodID: '06',
+        featureTxt: 'Lovable',
+        prodImg: 'images/prod_img6.png',
+        prodTitle: 'HawkSight DJI Phantom Drone',
+        prodStar: 'images/star_icon.svg',
+        prodDescription: "The HawkSight DJI Phantom Drone represents the gold standard in aerial imaging and intelligent flight. Designed for creators, surveyors, and professionals who demand uncompromising quality, the Phantom combines powerful hardware with DJI’s industry-leading flight technology—delivering unmatched reliability, control, and clarity.",
+        price: {
+            currentPrice: 15.00,
+            originalPrice: 21.00,
+            discountPrice: 6.00,
+        },
+    },
+];

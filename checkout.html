@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>HawkSight - Unmatched Precision</title>
+    <!-- Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+
+<body class="checkout_page">
+    <!-- Header -->
+    <div class="topbar text-center text-white py-2">
+        <p class="m-0">Free Shipping on All Orders!</p>
+    </div>
+    <header class="main_header w-100 position-fixed left-0 bg-white">
+        <div class="container">
+            <div class="header_wrap d-flex justify-content-between align-items-center">
+                <div class="logo_sec">
+                    <a href="index.html"><img src="images/brand_logo.svg" alt=""></a>
+                </div>
+                <nav class="nav_menu ms-auto ms-md-0">
+                    <ul class="flex-column flex-md-row">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="icon_sec">
+                    <ul class="d-flex align-items-center justify-content-between">
+                        <li><a href="cart.html" class="cart_icon position-relative"><img
+                                    src="images/cart_icon.svg" alt=""><span id="cart_quantity"
+                                    class="number_count text-white bg_sky rounded-circle d-flex align-items-center justify-content-center position-absolute">0</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger_icon text-white justify-content-around align-items-center flex-column"
+                    id="for-nav">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Inner Banner -->
+    <section class="inner_banner checkout_banner text-center">
+        <div class="container">
+            <h1 class="text-white m-0">Place Your <strong>Order</strong></h1>
+        </div>
+    </section>
+    <!-- Thanks Sec -->
+    <section class="checkout_sec sec_margin">
+        <div class="container">
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-6 col-lg-7 mt-5 mt-md-0">
+                    <div class="left_sec">
+                        <h2 class="cmn_head text_dark mb-4">Finish your <strong class="text_sky">Purchase</strong> Now
+                        </h2>
+                        <p class="cmn_para text_dark">Don't forget to complete your checkout to get the exciting offer
+                        </p>
+                        <form id="checkout_form" action="thank-you.html" onsubmit="return dataSubmit();" method="post">
+                            <div class="shipping_info">
+                                <h3 class="cmn_head_dark text_dark m-0"><strong>Shipping Information</strong></h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="each_input">
+                                            <input type="text" placeholder="First Name" id="fName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="each_input">
+                                            <input type="text" placeholder="Last Name" id="lName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="each_input">
+                                            <input type="email" placeholder="Email Address" id="emailAddress">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="each_input">
+                                            <input type="number" placeholder="Phone Number" id="phNumber" maxlength="10">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="each_input">
+                                            <input type="text" placeholder="Address" id="yAddress">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="each_input">
+                                            <select name="" id="sCountry">
+                                                <option value="">Select Country</option>
+                                                <option value="India">India</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="each_input">
+                                            <input type="text" placeholder="City" id="city">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="each_input mb-3 mb-md-0">
+                                            <select name="" id="sState">
+                                                <option value="">Select State</option>
+                                                <option value="West Bengal">West Bengal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="each_input mb-0">
+                                            <input type="number" placeholder="ZIP Code" id="zip">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment_info">
+                                <h3 class="cmn_head_dark text_dark m-0"><strong>Payment Information</strong></h3>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="each_input">
+                                            <input type="number" placeholder="Card Number" id="ccNumber" maxlength="16">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="each_input">
+                                            <select name="" id="sMonth">
+                                                <option value="">Select Month</option>
+                                                <option value="January">January</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="each_input">
+                                            <select name="" id="sYear">
+                                                <option value="">Select Year</option>
+                                                <option value="2026">2026</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="each_input">
+                                            <input type="number" placeholder="CVV" id="cvv" maxlength="3">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-0 mt-md-4">
+                                        <div class="complete_checkout">
+                                            <button type="submit" class="cta_btn w-100 text-center" id="checkout_submit">Complete Checkout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="right_sec">
+                        <h4 class="cmn_head_dark text_dark mb-4"><strong>Order Summary</strong></h4>
+                        <div class="cart_prod"></div>
+                        <hr>
+                        <div class="cart_price"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="main_footer position-relative z-1" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="left_sec">
+                        <a href="index.html"><img src="images/brand_logo.svg" alt=""></a>
+                        <p class="m-0 mt-4">We specialize in cutting-edge drone technology, offering high-performance
+                            UAVs for various aerial purposes. Our mission is to elevate your perspective through
+                            innovative design, top-tier customer service, and unmatched flight performance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-start justify-content-md-center my-4 my-md-0">
+                    <div class="middle_sec">
+                        <h4 class="cmn_subhead fs-6 text_dark text-uppercase mb-3">Categories</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="right_sec">
+                        <h4 class="cmn_subhead fs-6 text_dark text-uppercase m-0">SUBSCRIBE NOW</h4>
+                        <form action="" class="subscribe_form position-relative my-3">
+                            <input type="email" placeholder="Type Your Email..." class="email_input w-100 border-0">
+                            <input type="submit" value="Submit"
+                                class="submit_btn position-absolute top-0 end-0 bg_sky border-0 fw-semibold">
+                        </form>
+                        <ul>
+                            <li><strong class="text-dark">Email: </strong><a
+                                    href="mailto:support@hawksight.com">support@hawksight.com</a></li>
+                            <li><strong class="text-dark">Phone: </strong><a href="tel:+91 8215765984">+91
+                                    8215765984</a></li>
+                            <li><strong class="text-dark">Address: </strong>1319, J P Nagar, Bangalore, India.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright -->
+    <section class="copyright_sec py-3 text-center">
+        <div class="container">
+            <p class="m-0">Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> HawkSight. All Rights Reserved
+            </p>
+        </div>
+    </section>
+    <!-- JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/all_product.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

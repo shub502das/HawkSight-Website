@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>HawkSight - Unmatched Precision</title>
+    <!-- Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+<body >
+    <!-- Header -->
+    <header class="main_header thanks_header w-100 position-fixed left-0 bg-white">
+        <div class="container">
+            <div class="header_wrap d-flex justify-content-center align-items-center">
+                <div class="logo_sec">
+                    <a href="index.html"><img src="images/brand_logo.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Inner Banner -->  
+    <section class="inner_banner thanks_banner text-center">
+        <div class="container">
+            <h1 class="text-white m-0">Your Order <strong>Receipt</strong></h1>
+        </div>
+    </section>
+    <!-- Thanks Sec -->
+    <section class="thanks_sec text-center sec_margin">
+        <div class="container">
+            <div class="content_sec p-3 p-md-4">
+                <img src="images/thanks_img.png" alt="" class="mx-auto">
+                <h2 class="text_dark my-3">Thank You For Ordering<br> <span class="text_sky" id="printUserName"></span></h2>
+                <p class="cmn_para">We’re currently preparing your order and will let you know as soon as it ships.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="main_footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="left_sec">
+                        <a href="index.html"><img src="images/brand_logo.svg" alt=""></a>
+                        <p class="m-0 mt-4">We specialize in cutting-edge drone technology, offering high-performance UAVs for various aerial purposes. Our mission is to elevate your perspective through innovative design, top-tier customer service, and unmatched flight performance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-start justify-content-md-center my-4 my-md-0">
+                    <div class="middle_sec">
+                        <h4 class="cmn_subhead fs-6 text_dark text-uppercase mb-3">Categories</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="right_sec">
+                        <h4 class="cmn_subhead fs-6 text_dark text-uppercase m-0">SUBSCRIBE NOW</h4>
+                        <form action="" class="subscribe_form position-relative my-3">
+                            <input type="email" placeholder="Type Your Email..." class="email_input w-100 border-0">
+                            <input type="submit" value="Submit" class="submit_btn position-absolute top-0 end-0 bg_sky border-0 fw-semibold">
+                        </form>
+                        <ul>
+                            <li><strong class="text-dark">Email: </strong><a href="mailto:support@hawksight.com">support@hawksight.com</a></li>
+                            <li><strong class="text-dark">Phone: </strong><a href="tel:+91 8215765984">+91 8215765984</a></li>
+                            <li><strong class="text-dark">Address: </strong>1319, J P Nagar, Bangalore, India.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright -->
+     <section class="copyright_sec py-3 text-center">
+        <div class="container">
+            <p class="m-0">Copyright &copy; <script>document.write(new Date().getFullYear())</script> HawkSight. All Rights Reserved</p>
+        </div>
+     </section>
+    <!-- JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        const userData = JSON.parse(localStorage.getItem('userData'));
+        const userName = userData.firstName + " " + userData.lastName;
+        document.getElementById('printUserName').textContent = userName;
+    </script>
+</body>
+
+</html>
